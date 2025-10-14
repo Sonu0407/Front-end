@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+.header {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.table_form{
+    background-color: blue;
+    display: flex;
+}
+
+/* form {
+    position: relative;
+    background-color: blue;
+    display: inline-block;
+}
+
+table {
+    display: flex;
+    position: absolute;
+    top: 355px;
+    left: 245px;
+    background-color: burlywood;
+} */
