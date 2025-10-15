@@ -138,3 +138,29 @@ To check status of the repository
 
 10. Git stash pop
 To pop stash changes
+
+data types in js
+1. primitive
+2. non-primitive
+
+primitive data types
+1. string
+2. Number
+3. boolean
+4. undefined
+5. Null
+6. Symbol
+
+non-primitive data types
+1. object: key-value pairs. {}
+2. array: Indexed collections. []
+3. function: reuseable block of code. ()
+
+variables
+
+let = local scoped
+var = global scoped
+const = constant
+
+hositing
+a variable can be called before declaration, it called as hositing, to avoid hositing use use the strict mode(use strict) in script.
