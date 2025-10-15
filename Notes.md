@@ -164,3 +164,28 @@ const = constant
 
 hositing
 a variable can be called before declaration, it called as hositing, to avoid hositing use use the strict mode(use strict) in script.
+
+Operators = 
+
+1. Arithmetic Opeartors used for mathematical calculations.\
+
+operator | Description            | example              | result
+1. +        Addition
+2. -        subtraction
+3. *        Multiplication
+4. /        Division
+5. %        Modules (remainder)
+7. **       Exponentiation
+8. ++       Increment
+9. --       Decrement
+
+increment
+1. pre increment
+2. post increment
+
+2. Assignment Operator = Used to assign values to variables.
+
+Operator
+1. =
+2. +=
+3. 
