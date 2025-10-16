@@ -14,89 +14,102 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
-      .form form {
-        border: 5px solid black;
-        display: flex;
-        justify-content: center;
-      }
-      h3 {
-        display: flex;
-        justify-content: center;
-      }
-      .container-fluid {
-        width: 500px;
-      }
-      .box {
-        border: 2px solid #000;
-        border-radius: 5px;
-        width: 300px;
-        height: 400px;
-      }
-      .container {
+      body {
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 100px 0;
+        background-color: rgb(60, 180, 255);
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        border-radius: 5px;
+        width: 300px; /* 300 */
+        height: 400px;
+      }
+      .container {
+        background-color: white;
+        /* border: 2px solid #000; */
+        border-radius: 5px;
+        width: fit-content;
+        padding: 0;
+        margin: 50px auto;
       }
       h3 {
         padding-top: 5px;
+        font-weight: bolder;
       }
       form {
         margin: 40px 20px 0 20px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        /* gap: 10px; */
+      }
+      small {
+        font-size: 0.7em;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      select option {
+        color: rgb(114, 112, 112);
+      }
+      button {
+        background-color: rgb(0, 93, 124);
+        height: 30px;
+        width: 100px;
+        border-radius: 4px;
+        color: white;
+        margin: 0 auto;
+      }
+      :placeholder-shown {
+        color: black;
       }
     </style>
   </head>
   <body>
     <div class="container">
-       <div class="box">
+      <div class="box">
         <h3>Registration Form</h3>
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Phone" />  
+          <input
+            type="text"
+            placeholder="Name*"
+            style="background-color: #e2e1e0; border: none;"
+          />
+          <small style="color: red">Please Enter Your Name</small>
+          <input
+            type="email"
+            placeholder="Email*"
+            style="background-color: #e2e1e0; border: none;"
+          />
+          <small style="counter-reset: red">Please Enter Your Email</small>
+          <input
+            type="text"
+            placeholder="Phone*"
+            style="background-color: #e2e1e0; border: none;"
+          />
+          <small style="color: red">Please Enter Your Phone-Number</small>
+          <select name="origin" id="origin" style="background-color: #e2e1e0; border: none;">
+            <option selected>Subjects*</option>
+            <option>MATH</option>
+            <option>SCIENCE</option>
+            <option>PHYCISE</option>
+          </select>
+          <small style="color: red">Please enter your subject</small>
+          <input
+            type="message"
+            placeholder="Message"
+            style="background-color: #e2e1e0; border: none;"
+          />
+          <small style="color: red">Please Enter Your Message</small>
+          <button type="submit">Submit</button>
         </form>
-       </div> 
-    </div>
-    
-    <!-- <div class="box"></div>
-    <section class="container-fluid">
-      <div class="form">
-        <h3>Register Form</h3>
-        <form>
-          <input type="text" placeholder="Name" />
-          <small>Please enter your name</small>
-
-          <input type="email" placeholder="Email" />
-          <small>Please enter your email</small>
-
-          <input type="text" placeholder="Phone" />
-          <small>Please enter your phone-number</small>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Subjects
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-          <input type="text" placeholder="Message" />
-          <small>Please enter the message</small>
-
-          <button type="button" class="btn btn-primary">Submit</button>
-        </form> -->
       </div>
-    </section>
+    </div>
   </body>
 </html>
