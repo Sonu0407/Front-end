@@ -189,3 +189,35 @@ Operator
 1. =
 2. +=
 3. 
+
+3. Comparsion Operator = Used to compare two values
+
+a. (==)    Equal to
+b. (===)   strict equal
+c. ===     type+value
+d. !=      Not equal
+e. !==     strict not equal
+f. >       grater than
+g. <       less than
+h. >=      Greater than or equal
+i. <=      less than or equal
+
+4. logical operators = used for logical operations.
+
+a. &&      logical AND. true && false -> false
+b. ||      logical OR.  a || b
+c. !       logical NOT. !true -> false
+
+5. String Operators = used to manipulate strings.
+
+a. +       string Concatenation     "Hello" + "World"               o/p = "Hello World"
+b. +=      Concatenation assign     let x = "Hi "; x += "Adil";     o/p = "Hi Adil"
+
+array methods
+1. push -- End of array works on copy of array
+2. pop --- End of array works on copy of array
+3. shift -- start of array works on same array
+4. unshift -- start of array works on same array
+5. slice -- any index of array works on same array
+6. splice -- any index of array works on same array 
+
