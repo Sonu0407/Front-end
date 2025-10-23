@@ -219,5 +219,5 @@ array methods
 3. shift -- start of array works on same array
 4. unshift -- start of array works on same array
 5. slice -- any index of array works on same array
-6. splice -- any index of array works on same array 
+6. splice -- any index of array works on same array
 

@@ -75,43 +75,62 @@
     // console.log(student[1].name)
     // console.log(student[0].name)
       
-    let fruits = ["apple","banana","Mango"];
+    // let fruits = ["apple","banana","Mango"];
 
-    fruits.push("Orange")
-    console.log(fruits);
+    // fruits.push("Orange")
+    // console.log(fruits);
 
-    fruits.pop();
-    console.log(fruits);
+    // fruits.pop();
+    // console.log(fruits);
 
-    fruits.shift();
-    console.log(fruits);
+    // fruits.shift();
+    // console.log(fruits);
 
-    fruits.unshift("Pineapple");
-    console.log(fruits);
+    // fruits.unshift("Pineapple");
+    // console.log(fruits);
 
-    fruits.slice(1);
-    console.log(fruits);
+    // fruits.slice(1);
+    // console.log(fruits);
 
-    fruits.splice(0, 1);
-    console.log(fruits);
+    // fruits.splice(0, 1);
+    // console.log(fruits);
 
-    // first 0 is used for starting position and next 0 is used for its removing element //
-    fruits.splice(0,0, "pineapple", "strawberry")
-    console.log(fruits);
+    // // first 0 is used for starting position and next 0 is used for its removing element //
+    // fruits.splice(0,0, "pineapple", "strawberry")
+    // console.log(fruits);
     
-    function yourName (name){
-        console.log("Hello",name);
+    // function yourName (name){
+    //     console.log("Hello",name);
+    // }
+    // yourName(name="sonu")  // one method 
+
+    // // return in function
+
+    // function greet(name){
+    //     return "Hello, " + name + "!";
+    // }
+    // console.log(greet("Sonu.S"));
+
+    function greeting (name) {
+        return name
     }
-    yourName(name="sonu")  // one method 
+    
+    result = greeting ("Sonu")
 
-    // return in function
+    console.log(result);
 
-    function greet(name){
-        return "Hello, " + name + "!";
-    }
-    console.log(greet("Sonu.S"));
+    let fruits = ["apple","orange","mango","banana"]
+    // slice is used to extract data from the list start and end position note: assign it to a variable or it does'nt work
+    extract = fruits.slice(1);
+    console.log(extract);
 
+    let friends = ["sonu","hanumesh","vijay","charan","bhuvan","bharath","naveen","tharun"]
+    // splice is used for removing the data in the list
+    friends.splice(1)
+    console.log(friends);
+    
 
+    
     
     
     
