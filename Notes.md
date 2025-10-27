@@ -221,3 +221,10 @@ array methods
 5. slice -- any index of array works on same array
 6. splice -- any index of array works on same array
 
+const
+const keyword then variable name and values 
+example: const city = "Mumbai"
+
+this refers to the object that is currently calling the function
+this points to that object itself
+can use it anywhere in javascript
