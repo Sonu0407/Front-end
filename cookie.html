@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <h1>Cookies Page</h1>
+
+    <script>
+        document.cookie = "username=Sonu; expires= 31 Dec 2025 23:59:59 GMT; path=/";
+        document.cookie = "firstname=Sonu; expires= 31 Dec 2025 23:59:59 IST; path=/";
+        document.cookie = "lastname= S; expires= 31 Dec 2025 23:59:59 IST; path=/";
+        console.log(document.cookie);
+
+        function getCookie(name) {
+            let cookieArr = document.cookie.split(";");
+            // console.log(cookieArr);
+            
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+                if (name == cookiePair[0].trim()) {
+                 return decodeURIComponent(cookiePair[1]);   
+                }
+            }
+            return null;
+        }
+        console.log(getCookie("username"));
+        console.log(getCookie("firstname"));
+        console.log(getCookie("lastname"));
+
+
+        let count = getCookie('count') // count
+        count = count ? +count + 1 : 1 // count
+
+        document.cookie = "count=" + count + "; path=/";
+        // document.write("You have visited this page " + count + " times.");
+        document.write(`<h2> You have visited this page ${count} times.</h2>`);
+
+        function double(array) {
+            let result = [];
+            let size = array.length;
+            for(i=0;i<=size;i++) {
+                result.push(array[i] * 2);
+                
+            }
+            console.log(result);
+        }
+        double(array = [1, 2, 3]);
+        
+        function repeat(string) {
+            let len = string.length
+            for(let i=0; i<=len; i++) {
+                console.log(string[i]);
+            }
+        }
+        repeat("HelloWorld");
+
+        let str = " ";
+        for(let i = 0; i <= 9; i++) {
+            str += i;
+        }
+        console.log(str)
+
+        // let nums = [1, 2, 3, 4, 5];
+        // let doubled = nums.map(function (nums) {
+        //     return num * 2;
+        // })
+        
+        let nums = [1, 2, 3];
+        let double_num = nums.map(nums =>  nums * 2);
+        console.log(double_num);
+        let word = ["helloworld"]
+        let upper_str = word.map(word => word.toUpperCase());
+        console.log(upper_str);
+        let names = [
+            {name: "sonu",
+            age: 45},
+            {name: "ramu",
+            age: 50},
+            {name: "monu",
+            age: 30}
+        ];
+        let output_names = names.map(names => names.name);
+        console.log(output_names[0]);
+        
+        // function setTimeOutfunction() {
+        //     alert("Hello World!")
+        // }
+        // setTimeOut(setTimeOutfunction, 10000);
+
+        async function fetchDataFromApi() {
+            console.log("Fetching data from API...");
+            
+            let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+            let data = await response.json();
+
+            console.log("Data fetch initiated.");
+            console.log(response);
+            console.log(data)
+        }
+        fetchDataFromApi();
+  
+        function checkAge(age) {
+            return new Promise ((resolve, reject) => {
+                if (age >= 18) {
+                    resolve("Adult");
+                }
+                else {
+                    reject("Minor");
+                }
+            });
+        }
+        checkAge(20)
+            .then(message => console.log(message))
+            .catch(error => console.log(error));
+
+    </script>
+</body>
+</html>
