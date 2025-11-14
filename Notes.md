@@ -414,3 +414,34 @@ function in react
 2. component defination
 3. component calling(exporting) (to reuse this same component we must import the exported 
 component to the file we are expecting to use it)
+
+3. import css files
+
+React routing 
+
+to implement single page application
+to navigate one page to another page using routing
+
+React Routing Component
+1. BrowserRouter -> to handle browser navigation action
+2. Routes -> Routes will have route Configuration
+3. Route -> Route Path to be rendered Component based on ink url text
+4. Link -> to link to the path
+
+To setup react routing need to install routing package
+
+npm install react-router-dom
+
+Flow of routes
+Link => To
+
+To => path
+
+Routes => Route
+
+Route => path,component
+
+index.js => BrowserRoutes
+
+
+

@@ -1,11 +1,11 @@
-import homeRenderingComponent from './home';
-import contactPage from './contact';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import headerComponent from './header';
 
 function App() {
   return (
     <div className="App">
-      {homeRenderingComponent}
-      {/* {contactPage} */}
+      {headerComponent}
     </div>
   );
 }
